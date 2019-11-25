@@ -97,7 +97,7 @@ brew install tmux
 brew install tree
 
 # Install Cask
-brew tap homebrew/cask-cask
+brew tap homebrew/cask-versions
 
 # Core casks
 brew cask install iterm2
