@@ -90,6 +90,7 @@ brew install ripgrep
 brew install ruby
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install task
 brew install tig
 brew install tldr
 brew install tmux
