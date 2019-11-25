@@ -117,6 +117,7 @@ brew cask install spotify
 brew cask install telegram-desktop
 brew cask install transmission
 brew cask install vlc
+brew cask install whatsapp
 
 # Remove outdated versions from the cellar.
 brew cleanup
