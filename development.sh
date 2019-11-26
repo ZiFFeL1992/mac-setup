@@ -45,12 +45,12 @@ brew cask install google-cloud-sdk
 gcloud components install beta
 gcloud components install bq
 gcloud components install gsutil
-gcloud components install kubectl
 
 gcloud auth application-default login
 gcloud auth configure-docker
 
 # Install k8s stuff
+brew install kubectl
 brew install kubectx
 brew install minikube
 
