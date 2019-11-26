@@ -37,7 +37,6 @@ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
 echo "------------------------------"
 echo "Opening iTerm.app..."
-echo "Run custom.zsh from iTerm.app"
 sleep 5
 
 open -a iTerm.app

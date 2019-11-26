@@ -86,6 +86,7 @@ brew install htop
 brew install httpie
 brew install jq
 brew install make
+brew install reattach-to-user-namespace
 brew install ripgrep
 brew install ruby
 brew install speedtest_cli
@@ -119,5 +120,17 @@ brew cask install transmission
 brew cask install vlc
 brew cask install whatsapp
 
+# Extra setup
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+mkdir -p "$(bat --config-dir)/syntaxes"
+curl -o "$(bat --config-dir)/syntaxes/vue.sublime-syntax" https://raw.githubusercontent.com/vuejs/vue-syntax-highlight/new/Vue%20Component.sublime-syntax
+
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo ' --------------------------------------------------'
+echo '| Run tmux and press prefix + I to get all plugins |'
+echo ' --------------------------------------------------'
