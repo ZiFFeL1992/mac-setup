@@ -38,7 +38,7 @@ npm install -g npkill
 npm install -g npm-check-updates
 
 # Use node lts by default
-n lts
+sudo n lts
 
 # Install gcloud
 brew cask install google-cloud-sdk
