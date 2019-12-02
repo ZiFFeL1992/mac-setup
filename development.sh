@@ -30,15 +30,13 @@ brew upgrade
 brew cask install docker
 brew cask install sequel-pro
 
-# Install node
-brew install node
+# Install node LTS
+brew install n
+sudo n lts
 
-npm install -g n
+# Install global packages
 npm install -g npkill
 npm install -g npm-check-updates
-
-# Use node lts by default
-sudo n lts
 
 # Install gcloud
 brew cask install google-cloud-sdk
