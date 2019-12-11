@@ -49,5 +49,8 @@ brew install kubectl
 brew install kubectx
 brew install minikube
 
+# Install additional tools
+brew cask install runjs
+
 # Remove outdated versions from the cellar.
 brew cleanup
