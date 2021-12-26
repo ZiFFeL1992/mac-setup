@@ -27,8 +27,8 @@ brew update
 brew upgrade
 
 # Install development tools
-brew cask install docker
-brew cask install sequel-pro
+brew install docker
+brew install tableplus
 
 # Install node LTS
 brew install n
@@ -39,7 +39,7 @@ npm install -g npkill
 npm install -g npm-check-updates
 
 # Install gcloud
-brew cask install google-cloud-sdk
+brew install google-cloud-sdk
 gcloud components install beta
 gcloud components install bq
 gcloud components install gsutil
@@ -50,7 +50,7 @@ brew install kubectx
 brew install minikube
 
 # Install additional tools
-brew cask install runjs
+brew install runjs
 
 # Remove outdated versions from the cellar.
 brew cleanup

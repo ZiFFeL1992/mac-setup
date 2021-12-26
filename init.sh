@@ -48,19 +48,15 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-# Install `wget`
-brew install wget
-
 # Install Python
 brew install python3
 brew install pipenv
 
 # Install more recent versions of some OS X tools.
 brew install neovim
-brew install grep
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
 brew install openssh
 brew install openssl
-brew install screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -69,11 +65,12 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install font-roboto-mono
-brew cask install font-hack
+brew install font-fira-code
+brew install font-roboto-mono
+brew install font-hack
 
 # Install other tools
+brew install wget
 brew install autossh
 brew install bat
 brew install cmake
@@ -91,34 +88,31 @@ brew install ripgrep
 brew install ruby
 brew install speedtest_cli
 brew install ssh-copy-id
-brew install task
-brew install tig
 brew install tldr
 brew install tmux
+brew install tmux-xpanes
 brew install tree
-
-# Install Cask
-brew tap homebrew/cask-versions
+brew install yq
 
 # Core casks
-brew cask install iterm2
+brew install iterm2
 
 # Development tool casks
-brew cask install sublime-text
-brew cask install visual-studio-code
+brew install sublime-text
+brew install visual-studio-code
 
 # Misc casks
-brew cask install clipy
-brew cask install fantastical
-brew cask install firefox-developer-edition
-brew cask install google-chrome
-brew cask install slack
-brew cask install spectacle
-brew cask install spotify
-brew cask install telegram-desktop
-brew cask install transmission
-brew cask install vlc
-brew cask install whatsapp
+brew install clipy
+brew install fantastical
+brew install firefox-developer-edition
+brew install google-chrome
+brew install slack
+brew install spectacle
+brew install spotify
+brew install telegram-desktop
+brew install transmission
+brew install vlc
+brew install whatsapp
 
 # Extra setup
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
