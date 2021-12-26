@@ -18,6 +18,8 @@ xcode-select --install
 if test ! $(which brew); then
   echo "Installing homebrew..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/noname4u/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Make sure we’re using the latest Homebrew.
