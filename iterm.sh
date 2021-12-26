@@ -16,6 +16,9 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
+# Upgrade any already-installed formulae.
+brew upgrade
+
 # iterm should be already installed, but just in case
 brew install iterm2
 brew install zsh
